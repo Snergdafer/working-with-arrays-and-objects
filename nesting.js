@@ -52,7 +52,23 @@ var employees = [
 
 //Code Here
 
+///\///////////////////////////////////////////////////////////////////
+//\/how to reference object pairs in an Array
+///\///////////////////////////////////////////////////////////////////
 
+
+function employeeUpdater() {
+  employees.forEach(function(el){
+    if(el["firstName"] === "Theo"){
+      delete el
+    }else if(el["firstName"] === "Lorie") {
+      el["department"] = "HR"
+    }else{
+
+    }
+    return employees
+  })
+}
 
 ////////// PROBLEM 2 //////////
 
